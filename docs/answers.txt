@@ -1,0 +1,37 @@
+Gitlab tutorials date: 02/27/2025
+I created and configured my account in January 2023.
+
+1. $ git commit
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/Users/OMEN/Desktop/homework/assignment2/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/Users/OMEN/Desktop/homework/assignment2/.git/COMMIT_EDITMSG to Unix format...
+[master a8f281b] Added docs folder and status.txt to shows the state of the console
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+
+2. Using the command git rev-list --all --count, I found that 9 commits have been made to the repository.
+
+3. Using the command git log, I can see that the README.md file was last modified on Fri Feb 28 00:29:58 2025 -0500. 
+
+commit cd83c891a0dd8cc030eb3a18061edc8cea85feab (origin/master, origin/HEAD)
+Author: Alan V <123407551+av-z@users.noreply.github.com>
+Date:   Fri Feb 28 00:29:58 2025 -0500
+
+    Update README.md
+
+    The information files have been updated to describe the current state of the repository.
+
+    Repository owner information Alan Villarreal added to README.md
+
+4. Branches in git allow for parallel development of features without affecting the main repository where the production code is located and also provides a way to isolate and test changes before merging them.
+
+5. git log looks backwards at what has been committed, while git status looks at the present state of the local files and their readiness for the next commit.
+
+6. git log -- "Vehicle.h"
+
+7. git log --grep="file"
+
+8. Inheritance is a mechanism where a class can inherit properties and behaviors from another class. Polymorphism is the ability for different classes to respond differently to the same method call or function. Encapsulation is the bundling of data and methods that operate on that data within a single unit and restricting access to some of the object's components.
+
+9. The main difference between the two workflows is in how changes are integrated and who handles conflict resolution. In the integration manager workflow, there is a single integration manager who handles all merger and conflict resolutions in a centralized manner, while the dictator and lieutenants workflow distributes the integration responsibility among multiple lieutenants who each handle merges from specific developers, with a dictator who then integrates the lieutenants' changes into the central repository. This creates a distributed integration process based on hierarchy rather than a centralized one.
+
+10. A team of 100 developers would most likely benefit from using the dictators and lieutenants workflow because it provides a more scalable and manageable structure for large teams. Since the integration process is based on hierarchy, responsibility is distributed among lieutenants who each can handle merges and conflicts for specific groups of developers, preventing the bottlenecks that would happen if all 100 developers pushed to a single integration point. This approach would enable better organization by logical features areas or expertise, reduces the complexity of integration for the dictator who only needs to merge from lieutenants repositories rather than all developers, and creates a better review process that improves quality control. The distributed nature of conflict resolution at both lieutenant and dictator levels also prevents the single point of failure that would exist in a centralized workflow with so many contributors.
